@@ -10,15 +10,20 @@ public class espelhado
         int num1 = Integer.parseInt(temp[0]);
         int num2 = Integer.parseInt(temp[1]);
 
+        String output = "";
+        String temp = "";
+
         for (int x = num1; x <= num2; x++)
         {
-            MyIO.print(x);
+            output += x;
         }
-        for (int x = num2; x >= num1; x--)
+
+        for (int i = output.length; i >= 0; i--)
         {
-            MyIO.print(x);
+            temp += output.charAt(i);
         }
-        MyIO.println("");
+
+        MyIO.println(output + temp);
     }     
      public static void main (String[] Args)
     {
