@@ -11,19 +11,19 @@ public class espelhado
         int num2 = Integer.parseInt(temp[1]);
 
         String output = "";
-        String temp = "";
+        String tmp = "";
 
         for (int x = num1; x <= num2; x++)
         {
             output += x;
         }
 
-        for (int i = output.length; i >= 0; i--)
+        for (int i = output.length()-1; i >= 0; i--)
         {
-            temp += output.charAt(i);
+            tmp += output.charAt(i);
         }
 
-        MyIO.println(output + temp);
+        MyIO.println(output + tmp);
     }     
      public static void main (String[] Args)
     {
