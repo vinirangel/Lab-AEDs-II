@@ -32,9 +32,13 @@ public class espelhado
 
         do {
             linha[numEntrada] = MyIO.readLine();
-            //MyIO.println("A linha e :"+linha[numEntrada]);
-            espelhar(linha[numEntrada]);
+            // MyIO.println("A linha e :"+linha[numEntrada]);
         } while (isFim(linha[numEntrada++]) == false);
         numEntrada--;
+        numEntrada--;
+        
+        for (int i = 0; i <= numEntrada; i++) {
+            espelhar(linha[i]);
+        }
     }
 }
